@@ -4,7 +4,7 @@
 
 body {
     font-family: sans-serif;
-    background-image: linear-gradient(to right, #B94D9A , #D28DBE);
+    background: linear-gradient(to bottom right, #111827, #581c87, #be185d);
     width: 100%;
     margin: 0;
   }
@@ -15,6 +15,7 @@ main {
     margin: 0 auto;
 }
 
+/*--------------------HERO--------------------*/
 .hero {
   width: 100%;
   height: 100vh;
@@ -43,22 +44,20 @@ main {
 
 .avatar img {
   border-radius: 50%;
-  border: 12px solid rgba(241, 158, 218, 0.3);
+  border: 8px solid rgba(241, 158, 218, 0.3);
   width: 360px;
 }
 
 .description-card {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 15px;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   padding: 24px;
 }
 
 .nombre{
-  color: #B94D9A;
+  color: white;
   font-weight: bolder;
   font-size: xxx-large;
 }
@@ -67,95 +66,106 @@ main {
   margin: 0;
 }
 
+.apellido{
+  color: #f472b6;
+}
+
+.textrosa{
+  color: #f472b6;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.shortdesc{
+  color: #d1d5db;
+}
+
 .ciudad{
-  color: #363636;
-  background-color: #EBCCE2;
-  border-radius: 30px;
-  padding: 4px 12px;
-}
-
-.descripcion {
+  color: #9ca3af;
   display: flex;
-  flex-direction: column;
-  color: #363636;
-  text-align: center;
-  border-style: solid;
-  border-radius: 15px;
-  border-color: #EBCCE2;
-  gap: 12px;
-  padding: 12px;
-}
-
-.descripcion p {
-  margin: 0;
+  flex-flow: row nowrap;
+  gap: 8px;
+  align-items: center
 }
 
 .contacto{
-  display: grid;
-  grid-template-columns: repeat(2,100%);
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 12px;
 }
 
 .contacto a {
   text-decoration: none;
-  color: inherit;
 }
 
 .contacto-btn {
   border-radius: 30px;
-  padding: 8px;
+  padding: 4px 12px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 12px;
   font-size: small;
+  font-weight: bolder;
 }
 
 .github{
-  background-color: #C45C73;
+  color: #ec4899;
+  border: 1px #ec4899;
+  border-style: solid;
 }
 
 .mail{
-  background-color: #B674C8;
+  color: #a855f7;
+  border: 1px #a855f7;
+  border-style: solid;
 }
 
 .linkedin{
-  background-color: #D28DBE;
+  color: #f43f5e;
+  border: 1px #f43f5e;
+  border-style: solid;
 }
 
-.cv{
-  background-color: #E8BC95;
-}
-
-.experiencia {
-  width: 100%;
-  max-height: 958px;
+/*--------------------SOBRE MI--------------------*/
+.sobremi{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
-  justify-content: space-around;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 48px;
+  font-size: larger;
 }
 
-.titulo{
-  font-size: xxx-large;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+.sobremi p{
+  margin: 0;
 }
 
-.cardexp{
-  background-color: white;
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  color: #363636;
+  color: #d1d5db;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/*--------------------EXPERIENCIA--------------------*/
+.experiencia {
   display: flex;
   flex-flow: column nowrap;
-  font-weight: normal;
-  font-size: large;
-  padding: 48px 36px;
-  gap: 24px;
+  align-items: center;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 48px;
+  margin-top: 96px;
 }
 
 .titulopuesto{
@@ -177,25 +187,38 @@ main {
 
 .anios{
   background-image: linear-gradient(to left, #B94D9A , #D28DBE);
-  border-radius: 15px;
+  border-radius: 10px;
+  border: 1px #ec4899;
+  border-style: solid;
   padding: 3px 12px;
-  color: rgb(235, 226, 226);
+  color: #d1d5db;
 }
 
 .stack{
   display: flex;
   flex-flow: row nowrap;
-  gap: 24px;
+  gap: 12px;
 }
 
 .stack div{
-  background-color: #EBCCE2;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   padding: 3px 12px;
-  color: #C45C73;
+  color: #d8b4fe;
 }
 
+/*--------------------PROYECTOS--------------------*/
 .proyectos{
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.rowproyectos{
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
 }
