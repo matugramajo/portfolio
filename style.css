@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #B94D9A , #D28DBE);
+    width: 100%;
+    margin: 0;
+  }
+
+main {
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  max-height: 958px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.flex-container > div {
+    width: calc(50% - 24px);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: 12px solid rgba(241, 158, 218, 0.3);
+  width: 360px;
+}
+
+.description-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+.nombre{
+  color: #B94D9A;
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+
+.nombre h1 {
+  margin: 0;
+}
+
+.ciudad{
+  color: #363636;
+  background-color: #EBCCE2;
+  border-radius: 30px;
+  padding: 4px 12px;
+}
+
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  color: #363636;
+  text-align: center;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #EBCCE2;
+  gap: 12px;
+  padding: 12px;
+}
+
+.descripcion p {
+  margin: 0;
+}
+
+.contacto{
+  display: grid;
+  grid-template-columns: repeat(2,100%);
+  justify-content: center;
+  gap: 12px;
+}
+
+.contacto a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacto-btn {
+  border-radius: 30px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: small;
+}
+
+.github{
+  background-color: #C45C73;
+}
+
+.mail{
+  background-color: #B674C8;
+}
+
+.linkedin{
+  background-color: #D28DBE;
+}
+
+.cv{
+  background-color: #E8BC95;
+}
