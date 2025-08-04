@@ -128,3 +128,74 @@ main {
 .cv{
   background-color: #E8BC95;
 }
+
+.experiencia {
+  width: 100%;
+  max-height: 958px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 48px;
+}
+
+.titulo{
+  font-size: xxx-large;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.cardexp{
+  background-color: white;
+  border-radius: 15px;
+  color: #363636;
+  display: flex;
+  flex-flow: column nowrap;
+  font-weight: normal;
+  font-size: large;
+  padding: 48px 36px;
+  gap: 24px;
+}
+
+.titulopuesto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.puesto{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.empresa{
+  color: #D28DBE;
+  font-weight: bold;
+}
+
+.anios{
+  background-image: linear-gradient(to left, #B94D9A , #D28DBE);
+  border-radius: 15px;
+  padding: 3px 12px;
+  color: rgb(235, 226, 226);
+}
+
+.stack{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 24px;
+}
+
+.stack div{
+  background-color: #EBCCE2;
+  border-radius: 15px;
+  padding: 3px 12px;
+  color: #C45C73;
+}
+
+.proyectos{
+  display: flex;
+  flex-flow: column nowrap;
+}
