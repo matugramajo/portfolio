@@ -95,7 +95,7 @@ main {
   gap: 12px;
 }
 
-.contacto a {
+a {
   text-decoration: none;
 }
 
@@ -112,20 +112,20 @@ main {
 }
 
 .github{
-  color: #ec4899;
-  border: 1px #ec4899;
+  color: #f472b6;
+  border: 1px #f472b6;
   border-style: solid;
 }
 
 .mail{
-  color: #a855f7;
-  border: 1px #a855f7;
+  color: #fb7185;
+  border: 1px #fb7185;
   border-style: solid;
 }
 
 .linkedin{
-  color: #f43f5e;
-  border: 1px #f43f5e;
+  color: #c084fc;
+  border: 1px #c084fc;
   border-style: solid;
 }
 
@@ -155,7 +155,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  justify-content: space-between;
 }
+
 /*--------------------EXPERIENCIA--------------------*/
 .experiencia {
   display: flex;
@@ -172,7 +174,8 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  color: white;
 }
 
 .puesto{
@@ -180,8 +183,12 @@ main {
   font-weight: bold;
 }
 
+.descripcionpuesto{
+  color: #d1d5db;
+}
+
 .empresa{
-  color: #D28DBE;
+  color: #f472b6;
   font-weight: bold;
 }
 
@@ -196,7 +203,7 @@ main {
 
 .stack{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 12px;
 }
 
@@ -215,10 +222,51 @@ main {
   flex-flow: column nowrap;
   align-items: center;
   margin-top: 64px;
+  gap: 48px;
 }
 
 .rowproyectos{
   display: flex;
   flex-direction: row;
   gap: 48px;
+}
+
+.rowproyectos .card{
+  width: calc((100% - 2 * 48px) / 3);
+}
+
+.rowproyectos .stack {
+  justify-content: center
+}
+.tituloproyecto{
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.accesos{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.accesos a {
+  padding: 6px 32px;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.demo{
+  flex: 2;
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  justify-content: center
+}
+
+.accesos .github {
+  flex: 1;
 }
