@@ -257,3 +257,29 @@ a.contacto-btn {
 .descProyecto {
     color: #d1d5db;
 }
+
+.skills {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+        margin-bottom: 64px;
+}
+
+.cardsSkills {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.cardsSkills .card{
+    gap: 24px;
+    padding: 32px;
+}
+
+.tituloSkill {
+    font-size: x-large;
+    font-weight: bold;
+    color: #d1d5db;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
