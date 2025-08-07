@@ -283,3 +283,53 @@ a.contacto-btn {
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+@media (max-width: 600px) {
+    .sectionsContainer {
+        max-width: 300px;
+        gap: 64px;
+    }
+
+    .hero {
+        flex-flow: column nowrap;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .avatar img {
+        width: 180px;
+    }
+
+    h1.nombre {
+        font-size: 32px;
+    }
+
+    .info {
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: x-large;
+    }
+
+    .about p{
+        font-size: small;
+    }
+
+    .cardverticales {
+        gap: 24px;
+    }
+
+    .proyecto {
+        flex-flow: column nowrap;
+        gap: 32px;
+    }
+
+    .proyecto img {
+        width: 264px;
+    }
+
+    .proyecto.reverse {
+        flex-flow: column nowrap;
+    }
+}
