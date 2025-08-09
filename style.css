@@ -284,6 +284,18 @@ a.contacto-btn {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+    .descripcionpuesto-container {
+      display: block;
+    }
+
+    .descripcionpuesto-container summary {
+      display: none;
+    }
+
+    .descripcionpuesto {
+      display: block;
+    }
+
 @media (max-width: 600px) {
     .sectionsContainer {
         max-width: 300px;
@@ -332,4 +344,26 @@ a.contacto-btn {
     .proyecto.reverse {
         flex-flow: column nowrap;
     }
+
+    .experiencia p {
+        text-align: center;
+    }
+
+    .titulopuesto {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .puesto {
+        font-size: larger;
+    }
+
+    .empresa {
+        text-align: center;
+    }
+
+    .descripcionpuesto {
+        font-size: small;
+    }
+
 }
